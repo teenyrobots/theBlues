@@ -3,3 +3,7 @@
 .starter {
 	width: 200px;
 }
+
+#comic div {
+	margin-bottom: 2em;
+}

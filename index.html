@@ -13,24 +13,27 @@
 <!--***-->
 
 	<body>
-		<p>click the panels to start</p>
-		<h2>6</h2>
+		<p>click the panels a total of 6 times to start</p>
+		<h2 id="counter">6</h2>
 		<div id="playerInput">
 			<img src="panels/anOmenShrooms.png" class="starter" id="START_INTENSE">
 			<img src="panels/bestBros.png" class="starter" id="HOLE_INTENSE">
 			<img src="panels/fuckingTower.png" class="starter"  id="END_INTENSE">
 		</div>
-		<p>go button</p>
+		<button type="button" onClick="comicGenerator()" id="btn">Go</button>
 		<hr>
-		<div class="comic">
+		<div id="comic">
 			<div id="startSection">
 				<p>here is the start chunk of the comic</p>
+				<p>the start intensity is <span id="startMonitor">x</span></p>
 			</div>
 			<div id="holeSection">
 				<p>here is the hole chunk</p>
+				<p>the hole intensity is <span id="holeMonitor">x</span></p>
 			</div>
 			<div id="endSection">
 				<p>here is the end chunk</p>
+				<p>the end intensity is <span id="endMonitor">x</span></p>
 			</div>
 		</div>
 		<hr>
