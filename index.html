@@ -3,45 +3,48 @@
 
 	<head>
 		<title>the blues | joyce rice</title>
-		<!--optional-->
-			<!--jQuery-->
-			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<!--jQuery-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<!--Chart.js-->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
 		<!--cascade that shit yo-->
 		<link rel="stylesheet" type="text/css" href="styles.css">
+		<!--scale it for mobile-->
 		<meta charset="utf-8" name=viewport content="width=device-width, initial-scale=1">
 	</head>
 
 <!--***-->
 
 	<body>
+		<img src="panels/title.jpg" alt="the blues">
 		<p>click the panels a total of 6 times to start</p>
 		<h2 id="counter">6</h2>
-		<div id="playerInput">
-			<img src="panels/anOmenShrooms.png" class="starter" id="START_INTENSE">
-			<img src="panels/bestBros.png" class="starter" id="HOLE_INTENSE">
-			<img src="panels/fuckingTower.png" class="starter"  id="END_INTENSE">
+		<div class="playerInput">
+			<img src="panels/start.png" id="START_INTENSE">
+			<img src="panels/hole.png" id="HOLE_INTENSE">
+			<img src="panels/end.png" id="END_INTENSE">
 		</div>
+
+		<div class="chartContainer">
+			<canvas id="testChart"></canvas>
+		</div>
+
 		<button type="button" onClick="comicGenerator()" id="btn">Go</button>
-		<hr>
+
 		<div id="comic">
-			<div id="startSection">
-				<p>here is the start chunk of the comic</p>
-				<p>the start intensity is <span id="startMonitor">x</span></p>
-			</div>
-			<div id="holeSection">
-				<p>here is the hole chunk</p>
-				<p>the hole intensity is <span id="holeMonitor">x</span></p>
-			</div>
-			<div id="endSection">
-				<p>here is the end chunk</p>
-				<p>the end intensity is <span id="endMonitor">x</span></p>
-			</div>
+			<div id="startSection"></div>
+			<div id="holeSection"></div>
+			<div id="endSection"></div>
 		</div>
-		<hr>
-		<p>end</p>
-		<p>play again</p>
+
+		<div id="playAgain"></div>
 
 		<script type="text/javascript" src="script.js"></script>
+		
+
+		<!--<script type="text/javascript" src="http://static.fusioncharts.com/code/latest/fusioncharts.js"></script>
+		<script type="text/javascript" src="http://static.fusioncharts.com/code/latest/themes/fusioncharts.theme.fint.js?cacheBust=56"></script>
+		<script type="text/javascript" src="fusion.js"></script>-->
 	</body>
 
 </html>

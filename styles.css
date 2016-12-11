@@ -1,9 +1,40 @@
 /* Styles for the blues */
 
-.starter {
-	width: 200px;
+body *{
+	display: block;
+	margin: auto;
+}
+
+
+.playerInput {
+	width: 520px;
+	max-width: 100%;
+}
+
+.playerInput img {
+	width: 150px;
+	display: inline-block;
+	padding: 10px;
 }
 
 #comic div {
 	margin-bottom: 2em;
+}
+
+.chartContainer {
+  width: 350px;
+  height: 200px;
+  padding: 1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  background-color: purple;
+}
+
+#btn {
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+#playAgain {
+	margin-bottom: 5em;
 }
