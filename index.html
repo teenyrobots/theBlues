@@ -10,6 +10,7 @@
 		<!--cascade that shit yo-->
 		<link rel="stylesheet" type="text/css" href="styles.css">
 		<link href='https://fonts.googleapis.com/css?family=Cabin:400,700' rel='stylesheet' type='text/css'>
+		<link rel="shortcut icon" type="image/png" href="favicon.ico"/>
 		<!--scale it for mobile-->
 		<meta charset="utf-8" name=viewport content="width=device-width, initial-scale=1">
 	</head>
@@ -17,7 +18,7 @@
 <!--***-->
 
 	<body>
-		<img src="panels/title.jpg" alt="the blues">
+		<img src="panels/title.jpg" alt="the blues" class="genImg">
 		<div class="description">
 			<p>The Blues is a story with a dynamic shape. Distribute 6 clicks across the three panels below to determine the shape of your story:</p>
 			<!--<h2 id="counter">6</h2>-->
@@ -41,6 +42,24 @@
 		</div>
 
 		<div id="playAgain"></div>
+
+		<hr>
+
+		<div id="aboutHead" onClick="expandAbout()">
+				<h2 style="text-decoration: underline; color: #00bebe">about</h2>
+			</div>
+		<div id="aboutCopy">
+			<p>The Blues' dynamic story shape is inspired by <a href="https://www.brainpickings.org/2012/11/26/kurt-vonnegut-on-the-shapes-of-stories/" target="_blank">Kurt Vonnegut's Shape of Stories</a> concept and uses the shape he called "Man in the Hole."</p>
+
+			<p>The Blues was designed, illustrated, and coded by Joyce Rice in 2016. For more info on how it works, <a href="https://github.com/teenyrobots/theBlues">check out the repository on github</a>. For more digital comics, drawings, and pictures of my chickens, <a href="https://twitter.com/teenyrobots">follow me on twitter</a>.</p>
+		</div>
+
+		<div id="footer">
+				<p>thanks!</p>
+				<a href="https://www.instagram.com/teenyrobots/" target="_blank"><img src="images/grams.jpg"></a>
+				<a href="https://twitter.com/teenyrobots" target="_blank"><img src="images/twitter.jpg"></a>
+				<a href="mailto:joycer@teenyrobots.net?Subject=Hello%20friend" target="_blank"><img src="images/mail.jpg"></a>
+			</div>
 
 		<script type="text/javascript" src="script.js"></script>
 		

@@ -24,6 +24,12 @@ var theBlues = [
 $(document).ready(function(){
 	var btn = document.getElementById("btn");
 	btn.disabled = true;
+
+	$("#aboutCopy").hide();
+	$("#aboutHead").click(function(){
+		$("#aboutCopy").show();
+		$('html, body').scrollTop( $(document).height() );
+	});
 });
 
 //CHART STUFF

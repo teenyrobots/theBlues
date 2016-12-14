@@ -27,7 +27,7 @@ body *{
 }
 
 #comic div {
-	margin-bottom: 2em;
+	margin: 5em auto;
 }
 
 .chartContainer {
@@ -46,3 +46,42 @@ body *{
 #playAgain {
 	margin-bottom: 5em;
 }
+
+#aboutHead, #aboutCopy {
+	display: block;
+	margin: auto;
+	width: 500px;
+}
+
+#aboutCopy {
+	margin-bottom: 3em;
+}
+
+hr {
+	width: 100%;
+	max-width: 500px;
+	margin: 2em auto;
+}
+
+#footer {
+	text-align: center;
+	width: 600px;
+	margin-top: 3em;
+	margin-bottom: 2em;
+	font-style: italic;
+	font-size: .9em;
+}
+
+#footer img {
+	display: inline;
+	height: 2em;
+	padding: 2em;
+	padding-top: 1em;
+}
+
+#footer a:hover {
+	background-color: white;
+}
+
+
+
