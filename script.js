@@ -11,6 +11,8 @@ var	START_INTENSE = 0;
 var	HOLE_INTENSE = 0;
 var	END_INTENSE = 0;
 
+var HOLE_INTENSE_CLICKER = 0;
+
 var theBlues = [
 	"#74e6e5",
 	"#00bebe",
@@ -76,10 +78,10 @@ var myLineChart = new Chart(linectx, {
 		datasets: [{
 			data: storyData,
 			backgroundColor: [
-				'rgba(255, 99, 132, 0.2)'
+				'rgba(116, 230, 229, 1)'
 			],
 			borderColor: [
-				'rgba(255,99,132,1)'
+				'rgba(0, 190, 190, 1)'
 			],
 			borderWidth: .5,
 		}]
@@ -97,11 +99,12 @@ $(".playerInput img").click(function(){
 		console.log("INTENSER:", intenser);
 		storyData[0] = START_INTENSE;
 		myLineChart.update();
-	} else if($(this).attr("id") == "HOLE_INTENSE" && HOLE_INTENSE > (-3) && intenser > 0){
+	} else if($(this).attr("id") == "HOLE_INTENSE" && HOLE_INTENSE_CLICKER < 3 && intenser > 0){
 		intenser -= 1;
-		console.log("you clicked the hole", HOLE_INTENSE, "times");
-		$(this).css("background-color",theBlues[HOLE_INTENSE]);
+		console.log("you clicked the hole", HOLE_INTENSE_CLICKER, "times");
+		$(this).css("background-color",theBlues[HOLE_INTENSE_CLICKER]);
 		HOLE_INTENSE -= 1;
+		HOLE_INTENSE_CLICKER += 1;
 		console.log("INTENSER:", intenser);
 		storyData[1] = HOLE_INTENSE;
 		myLineChart.update();

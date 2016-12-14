@@ -3,8 +3,17 @@
 body *{
 	display: block;
 	margin: auto;
+	font-family: 'Cabin', Sans-serif;
 }
 
+.description {
+	display: block;
+	margin: 1em auto;
+	width: 500px;
+	max-width: 90%;
+	text-align: center;
+	padding: 1em;
+}
 
 .playerInput {
 	width: 520px;
@@ -27,7 +36,6 @@ body *{
   padding: 1em;
   margin-top: 1em;
   margin-bottom: 1em;
-  background-color: purple;
 }
 
 #btn {
