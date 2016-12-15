@@ -6,12 +6,12 @@
 */
 
 //VARS
-var intenser = 6;
-var	START_INTENSE = 0;
-var	HOLE_INTENSE = 0;
-var	END_INTENSE = 0;
+var intenser = 3;
+var	START_INTENSE = 1;
+var	HOLE_INTENSE = -1;
+var	END_INTENSE = 1;
 
-var HOLE_INTENSE_CLICKER = 0;
+var HOLE_INTENSE_CLICKER = 1;
 
 var theBlues = [
 	"#74e6e5",
@@ -24,6 +24,7 @@ var theBlues = [
 $(document).ready(function(){
 	var btn = document.getElementById("btn");
 	btn.disabled = true;
+	btn.style.opacity = 0.25;
 
 	$("#aboutCopy").hide();
 	$("#aboutHead").click(function(){
@@ -127,6 +128,7 @@ $(".playerInput img").click(function(){
 	}
 	if (intenser == 0) {
 		btn.disabled = false;
+		btn.style.opacity = 1;
 	}
 	document.getElementById("counter").textContent = intenser;
 })
@@ -200,13 +202,17 @@ function comicGenerator(){
 	document.getElementById("startSection").scrollIntoView();
 
 	btn.disabled = true;
+	btn.style.opacity = 0.25;
 	var playAgain = document.createElement("img");
 	playAgain.src = "panels/playAgain.jpg";
 	document.getElementById("playAgain").appendChild(playAgain);
 	playAgain.onclick = reloadComic;
 }
 
-
+function reloadBlues() {
+	window.location.reload();
+	scroll(0,0);
+}
 
 
 
